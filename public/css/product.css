@@ -1,0 +1,26 @@
+.breadcrumb-item a {
+            color: var(--primary-color);
+        }
+
+        .product-image-main {
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .product-thumbnail {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+        
+        .product-thumbnail:hover, .product-thumbnail.active {
+            border-color: var(--primary-color);
+        }
+
+        .nav-tabs .nav-link.active {
+            color: var(--primary-color);
+            border-color: var(--primary-color) var(--primary-color) white !important;
+        }

@@ -1,0 +1,8 @@
+        .order-card {
+            border-left: 5px solid var(--primary-color);
+            transition: transform 0.2s;
+        }
+
+        .order-card:hover {
+            transform: translateY(-3px);
+        }

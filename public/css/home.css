@@ -1,0 +1,91 @@
+
+        :root {
+            --primary-color: #7B68EE;
+            /* Warna ungu khas K-Pop */
+            --secondary-color: #FFC107;
+            /* Warna kuning untuk aksen */
+            --logo-color2:#3f23e6; 
+            --logo-color: #ff748c;
+            --font-color: #333;
+            --bg-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--font-color);
+            background-color: var(--bg-color);
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .hero-section {
+            background-color: #e9ecef;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .product-card {
+            transition: transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .btn-kpop {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-kpop:hover {
+            background-color: #6a5acd;
+            border-color: #6a5acd;
+            color: white;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .text-kpop-accent {
+            color: var(--secondary-color);
+        }
+
+        .badge-new {
+            background-color: var(--secondary-color);
+            color: #333;
+        }
+
+                .filter-btn.active {
+            background-color: #7B68EE;
+            color: white;
+            border-color: #7B68EE;
+        }
+        .filter-btn:hover {
+            background-color: #7B68EE;
+            color: white;
+            border-color: #7B68EE;
+        }
+        .bg-custom-primary {
+            background-color: var(--logo-color2) !important;
+        }
+        .bg-custom-secondary {
+            background-color: var(--secondary-color) !important;
+        }
+        .bg-custom-logo {
+            background-color: var(--logo-color) !important;
+        }
+        .text-black {
+            color: black !important;
+        }

@@ -1,0 +1,23 @@
+
+        .checkout-progress {
+            margin-bottom: 2rem;
+        }
+
+        .checkout-progress .breadcrumb-item.active {
+            color: var(--kpop-accent);
+        }
+
+        .card-order-summary .list-group-item {
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+        }
+
+        .card-order-summary .list-group-item:last-child {
+            border-bottom: none;
+        }
+        
+        .card-product-detail img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
