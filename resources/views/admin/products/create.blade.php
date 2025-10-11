@@ -51,12 +51,9 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="image" class="form-label">Gambar Saat Ini</label>
-                <div>
-                    {{-- Perbaikan: Menggunakan asset('storage/...') untuk path yang benar --}}
-                    <img src="{{ asset('storage/image/' . $product->image) }}" alt="{{ $product->name }}" class="img-thumbnail mb-2" style="width: 150px;">
-                </div>
+                <label for="image" class="form-label">Unggah Gambar Produk</label>
                 <input type="file" class="form-control @error('image') is-invalid @enderror" id="image" name="image" accept="image/*">
+                
                 @error('image')
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror

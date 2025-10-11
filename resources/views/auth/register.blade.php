@@ -1,4 +1,4 @@
-<x-authlayout>
+<x-authlayout title="User Register Page">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 

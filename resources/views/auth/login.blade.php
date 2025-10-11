@@ -1,4 +1,4 @@
-<x-auth-layout>
+<x-authlayout title="User Login Page">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
@@ -70,4 +70,4 @@
             <a href="#" class="text-decoration-none text-muted">Privacy Policy</a>.
         </div>
     </div>
-</x-auth-layout>
+</x-authlayout>

@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <!-- Sisi Kanan (Form Login) -->
+        <!-- Sisi Kanan (Form Login/Register) -->
         <div class="col-12 col-md-6 bg-white p-4 d-flex flex-column justify-content-center align-items-center">
             {{$slot}}
         </div>
