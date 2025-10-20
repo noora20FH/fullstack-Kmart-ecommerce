@@ -14,6 +14,7 @@ use App\Models\Authentication;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\OrderAdminController;
+use App\Http\Controllers\Auth\VerificationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,7 +33,9 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth.register');
 })->name('register');
-
+Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])
+    ->name('verification.verify')
+    ->middleware(['signed', 'throttle:6,1']); // Middleware bawaan Laravel untuk keamanan
 Route::get('/', [LandingPageController::class, 'index'])->name('home');
 Route::resource('products', ProductController::class);
 Route::post('/products/{product}/click', [ProductController::class, 'recordClick'])->name('products.click');
@@ -41,6 +44,7 @@ Route::post('/products/{product}/click', [ProductController::class, 'recordClick
 //laravel breeze default
 
 Route::middleware('auth')->group(function () {
+
     Route::middleware('admin')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('/dashboard/order-details', [DashboardController::class, 'getOrderDetails'])->name('admin.orders.details');
